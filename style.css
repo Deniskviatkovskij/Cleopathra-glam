@@ -367,16 +367,39 @@ body, html{
 
 }
 
-.photos_container::-webkit-scrollbar {
-    display: none;
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+ html::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  html::-webkit-scrollbar-thumb {
+    background: #525050;
+    
+  }
+  
+  /* Handle on hover */
+  html::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 99, 99); 
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  .photos_container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  .photos_container::-webkit-scrollbar-track {
+    background: #e4e3e3;  /* Firefox */
   }
-
+  .photos_container::-webkit-scrollbar-thumb {
+    background: orange;  /* Firefox */
+  }
+  .photos_container::-webkit-scrollbar-thumb:hover {
+    background: rgb(161, 119, 39);  /* Firefox */
+  }
+  .photos_container::-webkit-scrollbar {
+    width:10px;  /* Firefox */
+  }
 
   .testimonials {
       position: relative;
