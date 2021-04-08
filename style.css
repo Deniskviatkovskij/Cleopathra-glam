@@ -331,10 +331,7 @@ body, html{
 }
 
 .photos_container {
-    overflow-y: scroll;
-    max-height: 80vh;
-
-    margin-bottom: 0;
+    overflow-y: hidden;
     
 }
 
@@ -535,12 +532,13 @@ html::-webkit-scrollbar {
     color: #111;
     cursor: pointer;
     font-weight: 400;
-    transition: ease-in 0.3s;
+    
 
 }
 .form .inputBx input[type="submit"]:hover {
     background-color: black;
     color: #fff;
+    transition: ease-in 0.3s;
    
 }
 
@@ -853,3 +851,63 @@ html::-webkit-scrollbar {
     body.loaded .fadein {
         opacity: 1;
     }
+
+
+
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: transparent;
+        border-width: 1px 1px 1px 1px;
+        border-color: black;
+        border-style: solid; /* Set a background color */
+        color: black; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 8px 10px; /* Some padding */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: black;
+        color: white;
+        transition: ease-in 0.3s; /* Add a dark-grey background on hover */
+      }
+
+    
+
+      .containerss {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 86vh;
+      }
+      
+      .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+      }
+      
+      .box > img {
+        width: 200%;
+        height: 100%;
+        object-fit: cover; 
+        transition: .5s;
+      }
+      
+      
+      .box:hover { flex: 1 1 50%; }
+      .box:hover > img {
+        width: 100%;
+        height: 100%;
+      }
+       
