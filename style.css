@@ -24,7 +24,7 @@ body, html{
       rgba(59, 59, 88, 0.628)
     ),
     /* bottom, image */
-    url("/assets/images/hh.jpg");
+    url("./assets/images/hh.jpg");
 
     background-size:cover;
 }        
