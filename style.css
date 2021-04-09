@@ -535,6 +535,59 @@ html::-webkit-scrollbar {
     padding: 0;
 }
 
+
+
+@media screen and (max-height: 750px) {
+    .name img {
+        height: 500px;
+        width: auto;
+        padding: 0;
+
+    }
+    .logo img {
+        height: 170px;
+        position: relative;
+        opacity: 0.8;
+        
+    }
+    .logo {
+        width: 100%;
+          margin-bottom: 5em;
+    
+}
+.button_center button {
+  
+    padding: 10px 22px;
+    font-size: 16px;
+   
+  
+   }
+   .button_center {
+    margin-top: 25em;
+    height: 0px;
+    position: absolute;
+ }
+ 
+.banner-area{
+    min-width:100%;
+    min-height:100vh;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(59, 59, 88, 0.628), 
+      rgba(59, 59, 88, 0.628)
+    ),
+    /* bottom, image */
+    url("./assets/images/hh3.png");
+
+    background-size:cover;
+}        
+
+}
+
+
+
+
 @media screen and (max-width:1070px) {
     
   .name img {
@@ -546,14 +599,14 @@ html::-webkit-scrollbar {
 .logo {
   width: 100%;
   left:0;
-    margin-bottom: 8em;
+    margin-bottom: 7em;
     position: absolute;
     
 
  
 }
 .logo img {
-    height: 180px;
+    height: 165px;
     position: relative;
     opacity: 0.8;
     
