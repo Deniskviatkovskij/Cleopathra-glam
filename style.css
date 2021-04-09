@@ -569,8 +569,6 @@ html::-webkit-scrollbar {
  }
  
 .banner-area{
-    min-width:100%;
-    min-height:100vh;
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
@@ -581,9 +579,31 @@ html::-webkit-scrollbar {
     url("./assets/images/hh3.png");
 
     background-size:cover;
-}        
+}    
+.text {
+   
+    font-size: 15px;
+  
+}
+.about .contentBx {
+    padding-right: 0;
+    padding-left: 60px;
+    width: 50%;
+   
+   
+}
+
+.imgBx img, .imgBx2 img {
+    border-radius: 5%;
+    width: auto;
+    height: 80%;
+    max-height: 420px;
+    max-width: 80%;
+    margin-bottom: 4em;
+}
 
 }
+
 
 
 
