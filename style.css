@@ -291,48 +291,10 @@ body, html{
     display: flex;
 }
 
-.photos {
-    position: relative;
-    column-count: 4;
-    padding: 20px;
-  
-}
-
-.nuotrauka {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-.nuotrauka img {
-    width: 100%;
-    transition: 0.25 ease-in-out;
-}
-
-.nuotrauka:hover img {
-    transform: scale(1.1);
-    
-}
-
-
-@media screen and (max-width:768px) {
-    .photos {
-        column-count: 3;
-    }
-}
-@media screen and (max-width: 425px) {
-    .photos {
-        column-count: 2;
-    }
-}
-@media screen and (max-width: 375px) {
-    .photos {
-        column-count: 1;
-    }
-}
 
 .photos_container {
     overflow-y: hidden;
-    
+  
 }
 
 .darbai {
@@ -384,19 +346,7 @@ html::-webkit-scrollbar {
     background: rgb(100, 99, 99); 
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .photos_container::-webkit-scrollbar-track {
-    background: #e4e3e3;  /* Firefox */
-  }
-  .photos_container::-webkit-scrollbar-thumb {
-    background: orange;  /* Firefox */
-  }
-  .photos_container::-webkit-scrollbar-thumb:hover {
-    background: rgb(161, 119, 39);  /* Firefox */
-  }
-  .photos_container::-webkit-scrollbar {
-    width:10px;  /* Firefox */
-  }
+  
 
   .testimonials {
       position: relative;
@@ -768,12 +718,6 @@ html::-webkit-scrollbar {
 
   @media (max-width: 991px) {
       
-.photos {
-    
-    column-count: 2;
-  
-  
-}
 .footer {
     padding: 20px 50px;
     
@@ -793,12 +737,6 @@ html::-webkit-scrollbar {
       
   }
 
-
-       @media (max-width: 488px) {
-           .photos {
-               column-count: 1;
-           }
-       }
 
        @media (max-width: 1333px) {
       
@@ -880,12 +818,14 @@ html::-webkit-scrollbar {
 
     
 
+
       .containerss {
         display: flex;
         width: 100%;
         padding: 4% 2%;
         box-sizing: border-box;
         height: 86vh;
+     
       }
       
       .box {
@@ -893,19 +833,21 @@ html::-webkit-scrollbar {
         overflow: hidden;
         transition: .5s;
         margin: 0 2%;
+     
         box-shadow: 0 20px 30px rgba(0,0,0,.1);
         line-height: 0;
+        background-color: black;
       }
       
       .box > img {
-        width: 200%;
+        width: 100%;
         height: 100%;
         object-fit: cover; 
         transition: .5s;
       }
       
       
-      .box:hover { flex: 1 1 50%; }
+      .box:hover { flex: 1 1 40%; }
       .box:hover > img {
         width: 100%;
         height: 100%;
